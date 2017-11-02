@@ -70,7 +70,7 @@ span {
   position: relative;
   padding: 50px 50px 50px 50px;
   overflow: auto;
-  transform: translate3d( 50%, 0, 0);
+  transform: translate3d( 66%, 0, 0);
   }
 
 .profile-pic {
