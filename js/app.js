@@ -1,14 +1,9 @@
-// document.getElementsByTagName("li")[0].addEventListener("click",function(){
-// 	if(!this.parentNode.getAttribute("class")){
-// 		this.parentNode.setAttribute("class","slideDown");
-// 	}
-// 	else{
-// 		this.parentNode.removeAttribute("class");
-// 	}
-// });
+ $(document).ready(function() {
 
-$(function(){
-  $('#responsive-nav').click(function(){
-    $(this).parent().toggleClass('slideDown');
-  })
+   $('.skillbar').each(function() {
+
+        $(this).find('.skillbar-bar').animate( {
+            width:$(this).attr('data-percent')
+        },6000);
+    });
 });

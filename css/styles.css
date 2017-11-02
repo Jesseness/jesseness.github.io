@@ -5,7 +5,7 @@
 
 
 body {
-  background-color: #a3d5d3;
+  background-color: #333d77;
   font-family: 'Roboto', serif;
   font-weight: 400;
   font-size: 15px;
@@ -43,7 +43,7 @@ ul li {
   padding: 10px;
 }
 nav {
-  background: #5ba9a6;
+  background: #333d77;
   text-align: center;
   padding: 10px 0;
   box-sizing: border-box;
@@ -59,13 +59,22 @@ img {
   width: 300px;
 }
 
-.box {
-  background: #5ba9a6;
-  position: absolute;
-  padding-bottom: 10px;
+span {
+  color: white;
+  text-decoration: none;
 }
+
+.box {
+  background: #333d77;
+  width: 500px;
+  position: relative;
+  padding: 50px 50px 50px 50px;
+  overflow: auto;
+  transform: translate3d( 50%, 0, 0);
+  }
+
 .profile-pic {
-  background-image: url(../images/untiled-2.jpg);
+  background-image: url(../images/jesseprofile.jpg);
   background-position: center;
   background-size: cover;
   padding: 10em 0;
@@ -73,7 +82,7 @@ img {
 }
 
 .code-pic {
-  background-image: url(../images/coding.jpeg);
+  background-image: url(../images/Untitled-4.jpg);
   background-position: center;
   background-size: cover;
   padding: 10em 0;
@@ -87,18 +96,10 @@ img {
 }
 
 
-.btn-resume {
-  background-color: #d2d2d2;
-  color: #199a6b;
-  border-radius: 9px;
-  position: relative;
-  font-size: 15px;
-  padding: 10px 20px 10px 20px;
-  text-transform: uppercase;
-  text-align: center;
-  top: 0;
-  left: 10%;
-  transform: translate3d( -50%, 0, 0);
+.btn {
+  background-color: black;
+  border-color: green;
+  color: white;
 }
 
 

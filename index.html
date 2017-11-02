@@ -3,26 +3,30 @@
 <head>
   <title>Portfolio</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/styles.css">  
+  <title>Portfolio</title> 
 </head>
 <body>
   <div class="container">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   <section class="profile-pic">
-        <h1>Jesse Rodriguez</h1>
-        <h3>IT Support Consultant & Front End Webdeveloper</h3>
+    <h1>Jesse Rodriguez</h1>
+    <h3>IT Support Consultant & Front End Webdeveloper</h3>
       <article class="box">
-       <p>
-        As an avid rock climber and technology enthusiast I have truly learned the importance of growth, adaptation, and the meaning of hard work. There have been many climbs that were rather easy to tackle, while others have challenged and pushed me beyond my mental and physical barriers. The hardest obstacles have been the most rewarding and have engrained many life skills into my professional and personal career(s).</p>
-       <button class="btn-resume">Download Resume</button>
+        <p class="text-center">As an avid rock climber and technology enthusiast I have truly learned the importance of growth, adaptation, and the meaning of hard work. There have been many climbs that were rather easy to tackle, while others have challenged and pushed me beyond my mental and physical barriers. The hardest obstacles have been the most rewarding and have engrained many life skills into my professional and personal career(s).
+        </p>
+       <button type="button" class="btn btn-default">Download Resume</button>
       </article>
   </section>  
     <h1>01Professional skills</h1>
@@ -30,13 +34,13 @@
       <div class="skillbar clearfix " data-percent="70%">
         <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
         <div class="skillbar-bar" style="background: #e67e22;"></div>
-        <div class="skill-bar-percent">20%</div>
+        <div class="skill-bar-percent">70%</div>
       </div> <!-- End Skill Bar -->
 
       <div class="skillbar clearfix " data-percent="70%">
         <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
         <div class="skillbar-bar" style="background: #3498db;"></div>
-        <div class="skill-bar-percent">25%</div>
+        <div class="skill-bar-percent">70%</div>
       </div> <!-- End Skill Bar -->
 
       <div class="skillbar clearfix " data-percent="50%">
@@ -54,18 +58,16 @@
       <div class="skillbar clearfix " data-percent="35%">
         <div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
         <div class="skillbar-bar" style="background: #525252;"></div>
-        <div class="skill-bar-percent">75%</div>
+        <div class="skill-bar-percent">35%</div>
       </div> <!-- End Skill Bar -->      
     </div>
-    
  
-
   </div>
 
   <div class="code-pic">
-      <h1>02Portfolio</h1>
-          <p>My lastest work. <a href="#"> See More ><a>
-          </p>
+    <h1>02Portfolio</h1>
+      <p>My lastest work. <a href="#"> See More ><a>
+      </p>
     <img src="./images/work.gif">
 
     <img src="./images/coder.gif">
@@ -83,38 +85,56 @@
   </div>
 
   <div class="contact-box"></div>
-  <hr>
-    <h1>Contact</h1>
 
-  <form class="form">
+ <div class="row">
+        <div class="col-md-8 col-md-offset-2">
 
-    <p class="form">
-      <input type="text" name="name" id="name"/>
-      <label for="name">Name</label>
-    </p>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Contact</h3>
+          </div>
+          <div class="panel-body">
+            <form action="#" method="post" class="form-horizontal">
 
-    <p class="email">
-      <input type="text" name="email" id="email"/>
-      <label for="email">E-mail</label>
-    </p>
 
-    <p class="subject">
-      <input type="text" name="subject" id="subject" />
-      <label for="subject">Subject</label>
-    </p>
+              <div class="form-group">            
+                <label for="email" class="col-sm-3 control-label">E-mail*</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="email" placeholder="Your current email address">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="text" class="col-sm-3 control-label">Full Name</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="full_name" placeholder=" Your First and Last name">
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-8">
+                <label for="inputDestcription">Message</label>
+                  <textarea class="form-control" id="inputDestcription row="8" placeholder="Message"></textarea>
+                </div>
+              </div>
 
-    <p class="text">
-      <textarea name="text"></textarea>
-    </p>
+            <div class="form-group">
+              <div class="col-sm-9 col-md-offset-3">
+                <button type="button" class="btn btn-info">Send</button>
 
-    <p class="send">
-      <input type="submit" value="Send" />
-    </p>
-  </form>
-
-  </div>
+                <span>or</span>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  <script type="js/bootstrap.js"></script>
   <script src="js/jquery-2.1.4.js"></script>
   <script src="js/app.js"></script>
+  
     
 </body>
 </html>
